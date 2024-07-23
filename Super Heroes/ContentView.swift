@@ -1,22 +1,32 @@
 //
 //  ContentView.swift
-//  Super Heroes
+//  kahramanlar.swift
 //
-//  Created by Yaren on 23.07.2024.
+//  Created by Yaren on 18.07.2024.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            List(superKahramanlar){
+                superKahraman in
+                NavigationLink(destination: detayView(secilenKahraman: superKahraman),
+                               label: {
+                    SKListRowView(superKahraman: superKahraman)
+                        .alignmentGuide(.listRowSeparatorLeading, computeValue: { dimension in
+                            return 0
+                        })
+                    
+                    
+                })
+            }
+            
         }
-        .padding()
+        
     }
+    
 }
 
 #Preview {
