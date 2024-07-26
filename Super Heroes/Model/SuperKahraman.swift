@@ -31,7 +31,7 @@ struct Koordinat {
 }
 
 let batman = SuperKahraman(isim:"Batman", gorselIsmi: "batman", sehir: "chicago", meslek: "iş adamı" , koordinat: Koordinat(latitude: 41.858172, longitude: -87.6466582), gercekIsim: "Bruce Wayne")
-let superman = SuperKahraman(isim:"Superman", gorselIsmi: "superman", sehir: "gotham", meslek: "işsiz" , koordinat: Koordinat(latitude: 41.8609259, longitude: -87.6439759), gercekIsim: "Clark Kent")
+let superman = SuperKahraman(isim:"Superman", gorselIsmi: "superman", sehir: "gotham", meslek: "gazeteci2" , koordinat: Koordinat(latitude: 41.8609259, longitude: -87.6439759), gercekIsim: "Clark Kent")
 let ironman = SuperKahraman(isim:"Ironman", gorselIsmi: "ironman", sehir: "los angelese", meslek: "bilim adamı" , koordinat: Koordinat(latitude: 34.0792113, longitude: -118.6693479), gercekIsim: "Tony Stark")
 
 
